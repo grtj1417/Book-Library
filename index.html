@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/book-title-icon.svg" type="image/x-icon">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <img src="img/book-logo.svg" class="icon" alt="">
+                <div class="title">Bulid your own library</div>
+            </div>
+            <button type="button" class="add-book-btn">+ add book</button>
+        </div>
+
+        <div class="main">
+            <dialog aria-label="new-book-card" class="add-book-dialog" draggable="false">
+                <div>
+                    <h3 id="new-book-card">Book create</h3>
+                    <form method="dialog" action="">
+                        <label for="title-input">Title</label>
+                        <input class="title-input" type="text" name="title-input" autocomplete="off" required>
+                        <label for="author-input">Aythor</label>
+                        <input class="author-input" type="text" name="author-input" autocomplete="off" required>
+                        <label for="pages-input">Pages</label>
+                        <input class="pages-input" type="number" name="pages-input" autocomplete="off" required>
+                        <button type="submit" class="create-book-btn">Create book</button>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="footer">
+            &copy; copyright 2024 by vevina
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

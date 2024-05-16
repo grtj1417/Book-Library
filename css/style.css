@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Ubuntu";
+    src: url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Ubuntu;
+    --primary-color: #98C1D9;
+    --secondary-color: #E0FBFC;
+    --header-color: #3D5A80;
+    --secondary-font-color: #19385e;
+    --create-book-btn-color: #e4795e;
+    --grey-color: #8bb5cc;
+    --standard-shadow: 1px 3px 2px 0px rgb(160, 165, 166);
+}
+
+.container {
+    background-color: var(--secondary-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px clamp(40px, 1vw + 3rem, 70px) 0px;
+}
+
+.header > div {
+    display: flex;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--header-color);
+    letter-spacing: .2rem;
+}
+
+.add-book-btn {
+    white-space: nowrap;
+    width: 150px;
+    height: min-content;
+    padding: 10px 5px;
+    margin-right: 10px;
+    align-self: center;
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    background-color: var(--create-book-btn-color);
+    border: none;
+    border-radius: 20px;
+    box-shadow: var(--standard-shadow);
+}
+
+.add-book-btn:hover {
+    position: relative;
+    top: -2px;
+    background-color: #ed8064;
+}
+
+.add-book-btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #db7157;
+}
+
+.main {
+    margin:30px auto 20px;
+    padding: 20px 30px;
+    width: 85vw;
+    height: 95vh;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: start;
+    position: relative;
+}
+
+dialog {
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid #173b67;
+}
+
+h3 {
+    font-size: 26px;
+    color: #122d4d;
+    margin-bottom: 20px;
+}
+
+form > label {
+    font-size: 20px;
+    color: var(--secondary-font-color);
+    padding-left: 10px;
+}
+
+form > input {
+    width: 300px;
+    height: 40px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--header-color);
+    margin: 5px 0px 15px;
+    border-radius: 20px;
+    border: none;
+    border: 2px solid #18385f;
+    padding-left: 6px;
+}
+
+.create-book-btn{
+    font-size: 18px;
+    height: min-content;
+    display: flex;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--header-color);
+    color: white;
+    box-shadow: var(--standard-shadow);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.new-book {
+    width: 200px;
+    height: 220px;
+    border-radius: 3px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 25px;
+    box-shadow: inset 5px 0 rgb(255, 255, 255), 2px 4px 3px 0px rgb(49, 49, 49);
+    border-right: 5px solid rgb(26, 39, 96);
+    background-color: var(--header-color);
+}
+
+.new-book > p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.read-status-btn {
+    height: min-content;
+    padding: 5px 10px;
+    color: var(--secondary-font-color);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Ubuntu;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px rgb(36, 36, 36);
+    display: flex;
+    margin: 40px auto 0;
+}
+
+.read-status-btn:hover {
+    position: relative;
+    top: -1px;
+}
+
+.read-status-btn:active {
+    position: relative;
+    top: 0px;
+    background-color: #ced8e6;
+}
+
+.delete-btn {
+    width: 35px;
+    height: 35px;
+    background: url(img/delete-icon.svg);
+    background-size: 100%;
+    border: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    margin: 20px auto 0;
+    box-shadow: 2px 2px 3px 0px rgb(36, 36, 36);
+}
+
+.delete-btn:hover {
+    position: relative;
+    top: -1px;
+}
+
+.delete-btn:active {
+    position: relative;
+    top: 0px;
+    box-shadow: 2px 2px 3px 0px rgb(29, 29, 29);
+}
+
+/*刪除book動畫*/
+.new-book {
+transition: opacity 0.3s ease-in-out;
+}
+.deleted {
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 28px;
+    }
+    
+    .icon {
+        margin-left: 0px;
+    }
+
+    .main {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .new-book {
+        margin: 25px 35px;
+    }
+}
+
+
+.footer {
+    background-color: var(--grey-color);
+    text-align: center;
+    padding: 3px;
+    color: var(--header-color);
+}
