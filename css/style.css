@@ -194,7 +194,7 @@ dialog::backdrop {
 .delete-btn {
     width: 35px;
     height: 35px;
-    background: url(img/delete-icon.svg);
+    background: url(/img/delete-icon.svg);
     background-size: 100%;
     border: none;
     border: 2px solid white;
