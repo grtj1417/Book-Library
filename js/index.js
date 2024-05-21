@@ -49,6 +49,7 @@ function diplayBook() {
 
     const deleteButton = document.createElement("button");
     deleteButton.classList.add("delete-btn");
+    
 
     deleteButton.addEventListener("click", () => {
         // Remove book from library
